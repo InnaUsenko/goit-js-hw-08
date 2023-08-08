@@ -11,7 +11,6 @@ if (savedFormState) {
 
 const throttleEvent = throttle(formState => {
   localStorage.setItem(STORAGE_KEY, JSON.stringify(formState));
-  console.log(formState);
 }, 500);
 
 myForm.addEventListener('input', event => {
